@@ -1,6 +1,8 @@
 $border-radius: 0.5rem;
 $overlay-transform:-15rem;
 $small-container-width:90%;
+$vp-width-small:90vw;
+$vp-height-small:60vw;
 
 .rect{
   background-color: color(primary);
@@ -40,8 +42,8 @@ $small-container-width:90%;
 .project-item{
   border-radius: $border-radius;
   background-color: color(dark);
-  width: 90%;
-  height: 10rem;
+  width: $vp-width-small;
+  height: $vp-height-small;
   margin: 1rem auto;
 }
 

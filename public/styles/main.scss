@@ -1,8 +1,10 @@
-@import 'picsnicons';
-@import 'typo';
 @import 'colors';
+@import 'picsnicons';
 @import '_functions';
+@import 'typo';
+@import 'margins';
 @import "figures";
+@import "projectitem";
 
 body {
   padding: 0;

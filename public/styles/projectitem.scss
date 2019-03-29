@@ -1,0 +1,41 @@
+$button-width:40%;
+$button-height:10%;
+$project-button-top:100%-$button-width;
+$project-button-left:100%-$button-width;
+$project-button-border-radius:16px;
+
+.project-item{
+  border-radius: $border-radius;
+  background-color: color(primary);
+  width: $vp-width-small;
+  height: $vp-height-small;
+  margin: 1rem auto;
+}
+
+.project-item:hover{
+  background-color: color(dark);
+}
+
+.project-button{
+  width:$button-width;
+  height:$button-height;
+  border-radius: $project-button-border-radius;
+  background-color: color(dark);
+  border: 1px solid color(light);
+  text-align: center;
+  color:color(light);
+}
+
+.read-project{
+  position: absolute;
+  display: block;
+  left:$project-button-left/2;
+  top:$project-button-top*.9;
+}
+
+.visit-site{
+  position: absolute;
+  display: block;
+  left:$project-button-left/2;
+  top:$project-button-top*1.1;
+}
