@@ -1,0 +1,54 @@
+$border-radius: 0.5rem;
+$overlay-transform:-15rem;
+$small-container-width:90%;
+
+.rect{
+  background-color: color(primary);
+  display: block;
+  height: 36rem;
+  width: 100%;
+}
+
+.shadowed{
+  -webkit-box-shadow: 0rem 0.4rem 0.5rem -0.2rem $shadow;
+  -moz-box-shadow: 0rem 0.4rem 0.5rem -0.2rem $shadow;
+  box-shadow: 0rem 0.4rem 0.5rem -0.2rem $shadow;
+}
+
+#stack{
+  transform: translateY($overlay-transform);
+}
+
+.stack-item{
+  background-color: white;
+  border-radius: $border-radius;
+  margin: 0.5rem auto;
+  border:0.05rem solid lightgrey;
+
+}
+
+.container-basic{
+  width:$small-container-width;
+  text-align: justify;
+  margin: 0 auto;
+}
+
+.stack-item-content{
+  text-align: center;
+}
+
+.project-item{
+  border-radius: $border-radius;
+  background-color: color(dark);
+  width: 90%;
+  height: 10rem;
+  margin: 1rem auto;
+}
+
+.bordered{
+  border:1px solid red;
+}
+
+#projects{
+  transform: translateY($overlay-transform);
+}

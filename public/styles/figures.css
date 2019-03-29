@@ -1,0 +1,9 @@
+.rect {
+  background-color: color(primary);
+  display: block;
+  height: 5rem;
+  width: 100%;
+  border: 1px solid blue;
+}
+
+/*# sourceMappingURL=figures.css.map */

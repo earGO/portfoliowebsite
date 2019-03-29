@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700");
+.mepic {
+  position: relative;
+  display: block;
+  border-radius: 50%;
+  width: 12em;
+  height: 12em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 4rem;
+  margin-bottom: 4.5rem;
+}
+
+.header {
+  padding: 0.75rem 0.75rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.big {
+  font-size: 2em;
+}
+
+.mid {
+  font-size: 1.5rem;
+}
+
+.regular {
+  font-weight: normal;
+}
+
+.maintext {
+  font-size: 1rem;
+  font-weight: normal;
+  margin-bottom: 0.25rem;
+  margin-top: 0.25rem;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.white {
+  color: white;
+}
+
+.rect {
+  background-color: #42a5f5;
+  display: block;
+  height: 36rem;
+  width: 100%;
+}
+
+.shadowed {
+  -webkit-box-shadow: 0rem 0.4rem 0.5rem -0.2rem #9c9a9c;
+  -moz-box-shadow: 0rem 0.4rem 0.5rem -0.2rem #9c9a9c;
+  box-shadow: 0rem 0.4rem 0.5rem -0.2rem #9c9a9c;
+}
+
+#stack {
+  transform: translateY(-15rem);
+}
+
+.stack-item {
+  background-color: white;
+  border-radius: 0.5rem;
+  margin: 0.5rem auto;
+  border: 0.05rem solid lightgrey;
+}
+
+.container-basic {
+  width: 90%;
+  text-align: justify;
+  margin: 0 auto;
+}
+
+.stack-item-content {
+  text-align: center;
+}
+
+.project-item {
+  border-radius: 0.5rem;
+  background-color: #0077c2;
+  width: 90%;
+  height: 10rem;
+  margin: 1rem auto;
+}
+
+.bordered {
+  border: 1px solid red;
+}
+
+#projects {
+  transform: translateY(-15rem);
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+/*# sourceMappingURL=main.css.map */
