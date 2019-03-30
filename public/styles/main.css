@@ -203,34 +203,46 @@ header {
   width: 90vw;
   height: 60vw;
   margin: 1rem auto;
-}
-
-.project-item:hover {
-  background-color: #0077c2;
+  transition: 0.4s all;
 }
 
 .project-button {
+  position: absolute;
+  display: none;
   width: 40%;
-  height: 10%;
+  height: 3.3rem;
   border-radius: 16px;
   background-color: #0077c2;
   border: 1px solid #80d6ff;
   text-align: center;
   color: #80d6ff;
+  transition: 0.4s all;
 }
 
 .read-project {
-  position: absolute;
-  display: block;
   left: 30%;
-  top: 54%;
+  top: 48%;
 }
 
 .visit-site {
-  position: absolute;
-  display: block;
   left: 30%;
-  top: 66%;
+  top: 30.6%;
+}
+
+.project-item:hover .read-project,
+.project-item:hover .visit-site {
+  display: block;
+}
+
+.project-item:hover {
+  background-color: #0077c2;
+  transform: scale(1.01);
+}
+
+.project-button:hover {
+  background-color: #80d6ff;
+  cursor: pointer;
+  transform: scale(1.04);
 }
 
 body {

@@ -71,6 +71,10 @@ app.get('/',(req,res)=>{
     res.render('index')
 })
 
+app.get('/project/:id',(req,res)=>{
+    res.render('project')
+})
+
 //Login & authentication router
 
 /*====================== Start an application ========================*/

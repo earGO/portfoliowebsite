@@ -1,5 +1,5 @@
 $button-width:40%;
-$button-height:10%;
+$button-height:3.3rem;
 $project-button-top:100%-$button-width;
 $project-button-left:100%-$button-width;
 $project-button-border-radius:16px;
@@ -10,13 +10,12 @@ $project-button-border-radius:16px;
   width: $vp-width-small;
   height: $vp-height-small;
   margin: 1rem auto;
-}
-
-.project-item:hover{
-  background-color: color(dark);
+  transition: 0.4s all;
 }
 
 .project-button{
+  position: absolute;
+  display: none;
   width:$button-width;
   height:$button-height;
   border-radius: $project-button-border-radius;
@@ -24,18 +23,32 @@ $project-button-border-radius:16px;
   border: 1px solid color(light);
   text-align: center;
   color:color(light);
+  transition: 0.4s all;
 }
 
 .read-project{
-  position: absolute;
-  display: block;
   left:$project-button-left/2;
-  top:$project-button-top*.9;
+  top:$project-button-top*.8;
 }
 
 .visit-site{
-  position: absolute;
-  display: block;
   left:$project-button-left/2;
-  top:$project-button-top*1.1;
+  top:$project-button-top*0.51;
+}
+
+.project-item:hover .read-project,
+.project-item:hover .visit-site{
+  display: block;
+}
+
+.project-item:hover{
+  background-color: color(dark);
+  transform: scale(1.01);
+}
+
+.project-button:hover{
+  background-color: color(light);
+  cursor: pointer;
+
+  transform: scale(1.04);
 }
