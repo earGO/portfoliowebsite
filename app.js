@@ -3,11 +3,15 @@ const express = require('express'),
     app = express(),
     port = process.env.PORT || 5500,
 
+    //keys
+    keys = require('./config/keys')
+
     //controllers
 
     //routes
 
     //models
+    Projects = require('./models/Project'),
 
     //middleware
     bodyParser = require('body-parser'),
@@ -15,22 +19,24 @@ const express = require('express'),
     exphbs = require('express-handlebars'),
     methodOverride = require('method-override'),
     flash = require('connect-flash'),
-    session = require('express-session')/*,
-    passport = require('passport');*/
+    session = require('express-session'),
+    /*passport = require('passport');*/
 
+    //seeds
+    seed = require('./public/script/seed')
 
 /*====================== Mongoose connections ========================*/
 //Map global promises to get rid of warning
 mongoose.Promise = global.Promise;
 
 //DB config
-const db = require('./config/database');
+const mongoDB = keys.MONGODB_URI;
 //connect to mongoose
-mongoose.connect(db.mongoURI, {useNewUrlParser: true})
+mongoose.connect(mongoDB, {useNewUrlParser: true})
     .then(() => console.log('MongoDB connected!'))
     .catch(err => console.log('error connecting to MongoDB\n', errs));
 
-
+seed();
 /*====================== Activate middleware ========================*/
 
 app.use(express.static('public'));//use 'public'folder for custom CSS, javascript and static images
@@ -63,6 +69,7 @@ app.use((req, res, next) => {
     next();
 })
 
+
 /*====================== Go routing!!!! ========================*/
 //index route
 
@@ -71,7 +78,7 @@ app.get('/',(req,res)=>{
     res.render('index')
 })
 
-app.get('/project/:id',(req,res)=>{
+app.get('/project',(req,res)=>{
     res.render('project')
 })
 
